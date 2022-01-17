@@ -1,5 +1,5 @@
-# Configuration of the gfortran compiler to work with Abaqus
-To use [GNU Fortran Compiler](https://gcc.gnu.org/fortran/) with Abaqus the compiler and linker options in Abauqs config file must be modified. The following options added to global (lnx86_64.env) or local (abaqus_v6.env) Abaqus configuration files enables to compile and to link correctly Abaqus user subroutines on Linux using gfortran:
+# Configuration of the GFortran compiler to work with Abaqus
+To use [GNU Fortran Compiler](https://gcc.gnu.org/fortran/) with Abaqus the compiler and linker options in Abauqs config file must be modified. The following options added to global (lnx86_64.env) or local (abaqus_v6.env) Abaqus configuration files enables to compile and to link Abaqus user subroutines on Linux using GFortran:
 
 ```
 import os
@@ -34,6 +34,12 @@ del abaHomeInc
 ```
 
 The easiest way to set it up is to put the file provided abaqus_v6.env file to your home directory or directory where you run Abaqus with subroutines. If you have abaqus_v6.env already at that please copy the statements which define and delete variables to your abaqus_v6.env file.
+
+To debug a subroutine, it must be compiled with -g argument to produce debugging information. In the case of GDB you can use -ggdb to produce debugging information for use by GDB specifically. It can be done by modifying Abaqus environment variable compile_fortran in Abaqus environment file:
+```
+compile_fortran=compile_fortran + ['-ggdb3', '-std=legacy', '-fcheck=all', '-fbacktrace', '-static']
+```
+More aboute debugging Abaqus usersubroutines on Linux can be found [here](https://www.linkedin.com/pulse/debugger-abaqus-user-subroutines-marcin-wierszycki)
 
 To check if it works correctly run the command:
 ```
