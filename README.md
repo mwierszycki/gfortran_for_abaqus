@@ -33,13 +33,14 @@ del fortCmd
 del abaHomeInc
 ```
 
-The easiest way to set it up is to put the file provided abaqus_v6.env file to your home directory or directory where you run Abaqus with subroutines. If you have abaqus_v6.env already at that please copy the statements which define and delete variables to your abaqus_v6.env file.
-
 To debug a subroutine, it must be compiled with -g argument to produce debugging information. In the case of GDB you can use -ggdb3 to produce debugging information for use by GDB specifically. It can be done by modifying Abaqus environment variable compile_fortran in Abaqus environment file:
 ```
 compile_fortran=compile_fortran + ['-ggdb3', '-std=legacy', '-fcheck=all', '-fbacktrace', '-static']
 ```
-More aboute debugging Abaqus usersubroutines on Linux can be found [here](https://www.linkedin.com/pulse/debugger-abaqus-user-subroutines-marcin-wierszycki)
+More about debugging Abaqus usersubroutines on Linux can be found [here](https://www.linkedin.com/pulse/debugger-abaqus-user-subroutines-marcin-wierszycki)
+
+The easiest way to set it up is to put the file provided abaqus_v6.env file to your home directory or directory where you run Abaqus with subroutines. If you have abaqus_v6.env already at that please copy the statements which define and delete variables to your abaqus_v6.env file.
+
 
 To check if it works correctly run the command:
 ```
