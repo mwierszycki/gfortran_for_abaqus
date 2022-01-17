@@ -33,7 +33,7 @@ del fortCmd
 del abaHomeInc
 ```
 
-To debug a subroutine, it must be compiled with `-g` argument to produce debugging information. In the case of GDB you can use `-ggdb3` to produce debugging information for use by GDB specifically. It can be done by modifying Abaqus environment variable compile_fortran in Abaqus environment file:
+To debug a subroutine, it must be compiled with `-g` option to produce debugging information. In the case of GDB you can use `-ggdb3` to produce debugging information for use by GDB specifically. It can be done by modifying Abaqus environment variable compile_fortran in Abaqus environment file:
 ```
 compile_fortran=compile_fortran + ['-ggdb3', '-std=legacy', '-fcheck=all', '-fbacktrace', '-static']
 ```
