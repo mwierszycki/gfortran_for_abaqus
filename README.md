@@ -1,5 +1,5 @@
-# Configuration the gfortran compiler to work with Abaqus
-To use GNU Fortran Compiler with Abaqus the compiler and linker options in Abauqs config file must be modified. The following options added to global (lnx86_64.env) or local (abaqus_v6.env) Abaqus configuration files enables to compile and to link correctly Abaqus user subroutines on Linux using gfortran:
+# Configuration of the gfortran compiler to work with Abaqus
+To use [GNU Fortran Compiler](https://gcc.gnu.org/fortran/) with Abaqus the compiler and linker options in Abauqs config file must be modified. The following options added to global (lnx86_64.env) or local (abaqus_v6.env) Abaqus configuration files enables to compile and to link correctly Abaqus user subroutines on Linux using gfortran:
 
 ```
 import os
