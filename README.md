@@ -37,7 +37,7 @@ To debug a subroutine, it must be compiled with `-g` option to produce debugging
 ```
 compile_fortran=compile_fortran + ['-ggdb3', '-std=legacy', '-fcheck=all', '-fbacktrace', '-static']
 ```
-More about debugging Abaqus usersubroutines on Linux can be found [here](https://www.linkedin.com/pulse/debugger-abaqus-user-subroutines-marcin-wierszycki)
+More about debugging Abaqus usersubroutines on Linux can be found [here](https://www.linkedin.com/pulse/debugger-abaqus-user-subroutines-marcin-wierszycki).
 
 The easiest way to set it up is to put the file provided abaqus_v6.env file to your home directory or directory where you run Abaqus with subroutines. If you have `abaqus_v6.env` already, copy the statements which define and delete variables to your abaqus_v6.env file.
 
