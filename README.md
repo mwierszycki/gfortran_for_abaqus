@@ -1,4 +1,4 @@
-# Configuration of the GFortran compiler to work with Abaqus
+# Configuration of the GFortran compiler to use it with Abaqus
 To use [GNU Fortran Compiler](https://gcc.gnu.org/fortran/) with Abaqus the compiler and linker options in Abaqus config file must be modified. The following statements added to global (`lnx86_64.env`) or local (`abaqus_v6.env`) Abaqus configuration files enables to compile and to link Abaqus user subroutines on Linux using GFortran:
 
 ```
