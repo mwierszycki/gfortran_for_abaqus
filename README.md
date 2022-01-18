@@ -98,5 +98,6 @@ Mon 17 Jan 2022 10:11:54 PM CET
 Happy coding!
 
 # References:
-1. [The GNU Fortran Compiler]()
-2. [A GNU Manual ]()
+1. [The GNU Fortran Compiler](https://gcc.gnu.org/fortran/)
+2. [A GNU Manual](https://gcc.gnu.org/onlinedocs/)
+3. [Using GNU Fortran](https://gcc.gnu.org/onlinedocs/gcc-4.8.5/gfortran.pdf)
