@@ -17,7 +17,7 @@ compile_fortran = [fortCmd,
                    '-fstack-protector-strong',
                    '-msse3',
                    '-mavx', '-mavx2',
-                   '-free',
+                   '-ffixed-line-length-none',
                    '-I%I', '-I'+abaHomeInc, '%P']
 
 link_sl = [fortCmd,
